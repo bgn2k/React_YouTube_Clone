@@ -1,0 +1,168 @@
+.header{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.searchBox {
+    flex: 1;/*Cause we want box to extend till the end of the div*/
+    height: 30px;
+    font-family: Arial;
+    font-size: medium;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    /* padding-right: 10px; */
+    /* width: 900px; */
+    
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    /* display: inline-block; */
+}
+/* .searchBox::placeholder{
+    font-size: 16px;
+    font-weight: 100;
+    padding-left: 10px;
+} */
+.search-button{
+    height: 40px;
+    width: 50px;
+    border-radius: 20px;
+    border-style: none;
+    /* border-width: 1px; */
+    margin-left: -51px;
+    background-color: white;
+    /* padding-left: 25px; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.search-button .tooltip{
+    position: absolute;
+    bottom: -22px;
+    background-color: gray;
+    color: white;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+
+.search-button:hover .tooltip{
+    opacity: 1;
+}
+
+.voice-button{
+    height: 42px;
+    width: 45px;
+    border-radius: 30px;
+    padding-top: 4px;
+    border-style: solid;
+    border-width: 0;
+    margin-left: 10px;
+}
+/* 
+.searchDiv {
+    margin-top: 3%;
+    text-align: center;
+    margin-bottom: 20px;
+} */
+
+
+
+.humburger-menu{
+    height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.youtube-logo{
+height: 30px;
+padding-bottom: 5px;
+}
+
+
+
+.youtube-text{
+    font-weight: bold;
+    /* background-color: black; */
+    /* color: white; */
+
+    /* height: 50px; */
+    /* margin-left: 0px; */
+}
+.left-section{
+
+    display: flex;
+    align-items: center;
+    /* background-color: lightblue; */
+    /* width: 200px; */
+}
+
+.right-section{
+    flex-shrink: 0;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* justify-content: space-evenly; */
+    margin-right: 20px;
+}
+
+
+.middle-section{
+    /* background-color: pink; */
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 50px;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    /* align-items: center; */
+}
+
+.upload-icon{
+    height: 30px;
+
+}
+
+.notification-icon{
+    height: 30px;
+
+}
+
+.user-icon{
+    height: 40px;
+    border-radius: 20px;
+}
+
+.notification{
+    position: relative;
+}
+.count{
+    position: absolute;
+    top: -1px;
+    right: -10px;
+    background-color: #c00;
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 50px;
+}
